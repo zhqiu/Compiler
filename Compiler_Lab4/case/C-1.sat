@@ -1,0 +1,715 @@
+Program (1)
+  ExtDefList (1)
+    ExtDef (1)
+      Sepcifier (1)
+        TYPE: int
+      FunDec (1)
+        ID: power
+        LP
+        VarList (1)
+          ParamDec (1)
+            Sepcifier (1)
+              TYPE: int
+            VarDec (1)
+              ID: base1
+          COMMA
+          VarList (1)
+            ParamDec (1)
+              Sepcifier (1)
+                TYPE: int
+              VarDec (1)
+                ID: p1
+        RP
+      CompSt (1)
+        LC
+        DefList (2)
+          Def (2)
+            Sepcifier (2)
+              TYPE: int
+            DecList (2)
+              Dec (2)
+                VarDec (2)
+                  ID: ret1
+                ASSIGNOP
+                Exp (2)
+                  INT: 1
+            SEMI
+        StmtList (3)
+          Stmt (3)
+            WHILE
+            LP
+            Exp (3)
+              Exp (3)
+                ID: p1
+              RELOP: >
+              Exp (3)
+                INT: 0
+            RP
+            Stmt (4)
+              CompSt (4)
+                LC
+                StmtList (5)
+                  Stmt (5)
+                    Exp (5)
+                      Exp (5)
+                        ID: ret1
+                      ASSIGNOP
+                      Exp (5)
+                        Exp (5)
+                          ID: ret1
+                        STAR
+                        Exp (5)
+                          ID: base1
+                    SEMI
+                  StmtList (6)
+                    Stmt (6)
+                      Exp (6)
+                        Exp (6)
+                          ID: p1
+                        ASSIGNOP
+                        Exp (6)
+                          Exp (6)
+                            ID: p1
+                          MINUS
+                          Exp (6)
+                            INT: 1
+                      SEMI
+                RC
+          StmtList (8)
+            Stmt (8)
+              RETURN
+              Exp (8)
+                ID: ret1
+              SEMI
+        RC
+    ExtDefList (11)
+      ExtDef (11)
+        Sepcifier (11)
+          TYPE: int
+        FunDec (11)
+          ID: mod
+          LP
+          VarList (11)
+            ParamDec (11)
+              Sepcifier (11)
+                TYPE: int
+              VarDec (11)
+                ID: number2
+            COMMA
+            VarList (11)
+              ParamDec (11)
+                Sepcifier (11)
+                  TYPE: int
+                VarDec (11)
+                  ID: m2
+          RP
+        CompSt (12)
+          LC
+          StmtList (13)
+            Stmt (13)
+              RETURN
+              Exp (13)
+                Exp (13)
+                  ID: number2
+                MINUS
+                Exp (13)
+                  Exp (13)
+                    Exp (13)
+                      ID: number2
+                    DIV
+                    Exp (13)
+                      ID: m2
+                  STAR
+                  Exp (13)
+                    ID: m2
+              SEMI
+          RC
+      ExtDefList (16)
+        ExtDef (16)
+          Sepcifier (16)
+            TYPE: int
+          FunDec (16)
+            ID: getNumDigits
+            LP
+            VarList (16)
+              ParamDec (16)
+                Sepcifier (16)
+                  TYPE: int
+                VarDec (16)
+                  ID: number3
+            RP
+          CompSt (17)
+            LC
+            DefList (18)
+              Def (18)
+                Sepcifier (18)
+                  TYPE: int
+                DecList (18)
+                  Dec (18)
+                    VarDec (18)
+                      ID: ret3
+                    ASSIGNOP
+                    Exp (18)
+                      INT: 0
+                SEMI
+            StmtList (19)
+              Stmt (19)
+                IF
+                LP
+                Exp (19)
+                  Exp (19)
+                    ID: number3
+                  RELOP: <
+                  Exp (19)
+                    INT: 0
+                RP
+                Stmt (20)
+                  RETURN
+                  Exp (20)
+                    MINUS
+                    Exp (20)
+                      INT: 1
+                  SEMI
+              StmtList (21)
+                Stmt (21)
+                  WHILE
+                  LP
+                  Exp (21)
+                    Exp (21)
+                      ID: number3
+                    RELOP: >
+                    Exp (21)
+                      INT: 0
+                  RP
+                  Stmt (21)
+                    CompSt (21)
+                      LC
+                      StmtList (22)
+                        Stmt (22)
+                          Exp (22)
+                            Exp (22)
+                              ID: number3
+                            ASSIGNOP
+                            Exp (22)
+                              Exp (22)
+                                ID: number3
+                              DIV
+                              Exp (22)
+                                INT: 10
+                          SEMI
+                        StmtList (23)
+                          Stmt (23)
+                            Exp (23)
+                              Exp (23)
+                                ID: ret3
+                              ASSIGNOP
+                              Exp (23)
+                                Exp (23)
+                                  ID: ret3
+                                PLUS
+                                Exp (23)
+                                  INT: 1
+                            SEMI
+                      RC
+                StmtList (26)
+                  Stmt (26)
+                    RETURN
+                    Exp (26)
+                      ID: ret3
+                    SEMI
+            RC
+        ExtDefList (29)
+          ExtDef (29)
+            Sepcifier (29)
+              TYPE: int
+            FunDec (29)
+              ID: isNarcissistic
+              LP
+              VarList (29)
+                ParamDec (29)
+                  Sepcifier (29)
+                    TYPE: int
+                  VarDec (29)
+                    ID: number4
+              RP
+            CompSt (30)
+              LC
+              DefList (31)
+                Def (31)
+                  Sepcifier (31)
+                    TYPE: int
+                  DecList (31)
+                    Dec (31)
+                      VarDec (31)
+                        ID: numDigits4
+                      ASSIGNOP
+                      Exp (31)
+                        ID: getNumDigits
+                        LP
+                        Args (31)
+                          Exp (31)
+                            ID: number4
+                        RP
+                  SEMI
+                DefList (32)
+                  Def (32)
+                    Sepcifier (32)
+                      TYPE: int
+                    DecList (32)
+                      Dec (32)
+                        VarDec (32)
+                          ID: sum4
+                        ASSIGNOP
+                        Exp (32)
+                          INT: 0
+                    SEMI
+                  DefList (33)
+                    Def (33)
+                      Sepcifier (33)
+                        TYPE: int
+                      DecList (33)
+                        Dec (33)
+                          VarDec (33)
+                            ID: n4
+                          ASSIGNOP
+                          Exp (33)
+                            ID: number4
+                      SEMI
+                    DefList (34)
+                      Def (34)
+                        Sepcifier (34)
+                          TYPE: int
+                        DecList (34)
+                          Dec (34)
+                            VarDec (34)
+                              ID: s4
+                        SEMI
+              StmtList (35)
+                Stmt (35)
+                  WHILE
+                  LP
+                  Exp (35)
+                    Exp (35)
+                      ID: n4
+                    RELOP: >
+                    Exp (35)
+                      INT: 0
+                  RP
+                  Stmt (35)
+                    CompSt (35)
+                      LC
+                      StmtList (36)
+                        Stmt (36)
+                          Exp (36)
+                            Exp (36)
+                              ID: s4
+                            ASSIGNOP
+                            Exp (36)
+                              ID: mod
+                              LP
+                              Args (36)
+                                Exp (36)
+                                  ID: n4
+                                COMMA
+                                Args (36)
+                                  Exp (36)
+                                    INT: 10
+                              RP
+                          SEMI
+                        StmtList (37)
+                          Stmt (37)
+                            Exp (37)
+                              Exp (37)
+                                ID: n4
+                              ASSIGNOP
+                              Exp (37)
+                                Exp (37)
+                                  LP
+                                  Exp (37)
+                                    Exp (37)
+                                      ID: n4
+                                    MINUS
+                                    Exp (37)
+                                      ID: s4
+                                  RP
+                                DIV
+                                Exp (37)
+                                  INT: 10
+                            SEMI
+                          StmtList (38)
+                            Stmt (38)
+                              Exp (38)
+                                Exp (38)
+                                  ID: sum4
+                                ASSIGNOP
+                                Exp (38)
+                                  Exp (38)
+                                    ID: sum4
+                                  PLUS
+                                  Exp (38)
+                                    ID: power
+                                    LP
+                                    Args (38)
+                                      Exp (38)
+                                        ID: s4
+                                      COMMA
+                                      Args (38)
+                                        Exp (38)
+                                          ID: numDigits4
+                                    RP
+                              SEMI
+                      RC
+                StmtList (41)
+                  Stmt (41)
+                    IF
+                    LP
+                    Exp (41)
+                      Exp (41)
+                        ID: sum4
+                      RELOP: ==
+                      Exp (41)
+                        ID: number4
+                    RP
+                    Stmt (42)
+                      RETURN
+                      Exp (42)
+                        INT: 1
+                      SEMI
+                    ELSE
+                    Stmt (44)
+                      RETURN
+                      Exp (44)
+                        INT: 0
+                      SEMI
+              RC
+          ExtDefList (47)
+            ExtDef (47)
+              Sepcifier (47)
+                TYPE: int
+              FunDec (47)
+                ID: printHexDigit
+                LP
+                VarList (47)
+                  ParamDec (47)
+                    Sepcifier (47)
+                      TYPE: int
+                    VarDec (47)
+                      ID: digit6
+                RP
+              CompSt (48)
+                LC
+                StmtList (49)
+                  Stmt (49)
+                    IF
+                    LP
+                    Exp (49)
+                      Exp (49)
+                        ID: digit6
+                      RELOP: <
+                      Exp (49)
+                        INT: 10
+                    RP
+                    Stmt (50)
+                      Exp (50)
+                        ID: write
+                        LP
+                        Args (50)
+                          Exp (50)
+                            ID: digit6
+                        RP
+                      SEMI
+                    ELSE
+                    Stmt (52)
+                      Exp (52)
+                        ID: write
+                        LP
+                        Args (52)
+                          Exp (52)
+                            MINUS
+                            Exp (52)
+                              ID: digit6
+                        RP
+                      SEMI
+                  StmtList (53)
+                    Stmt (53)
+                      RETURN
+                      Exp (53)
+                        INT: 0
+                      SEMI
+                RC
+            ExtDefList (56)
+              ExtDef (56)
+                Sepcifier (56)
+                  TYPE: int
+                FunDec (56)
+                  ID: printHex
+                  LP
+                  VarList (56)
+                    ParamDec (56)
+                      Sepcifier (56)
+                        TYPE: int
+                      VarDec (56)
+                        ID: number5
+                  RP
+                CompSt (57)
+                  LC
+                  DefList (58)
+                    Def (58)
+                      Sepcifier (58)
+                        TYPE: int
+                      DecList (58)
+                        Dec (58)
+                          VarDec (58)
+                            VarDec (58)
+                              ID: a5
+                            LB
+                            INT: 4
+                            RB
+                      SEMI
+                    DefList (59)
+                      Def (59)
+                        Sepcifier (59)
+                          TYPE: int
+                        DecList (59)
+                          Dec (59)
+                            VarDec (59)
+                              ID: j5
+                            ASSIGNOP
+                            Exp (59)
+                              INT: 0
+                        SEMI
+                  StmtList (60)
+                    Stmt (60)
+                      WHILE
+                      LP
+                      Exp (60)
+                        Exp (60)
+                          ID: j5
+                        RELOP: <
+                        Exp (60)
+                          INT: 4
+                      RP
+                      Stmt (60)
+                        CompSt (60)
+                          LC
+                          StmtList (61)
+                            Stmt (61)
+                              Exp (61)
+                                Exp (61)
+                                  Exp (61)
+                                    ID: a5
+                                  LB
+                                  Exp (61)
+                                    ID: j5
+                                  RB
+                                ASSIGNOP
+                                Exp (61)
+                                  ID: mod
+                                  LP
+                                  Args (61)
+                                    Exp (61)
+                                      ID: number5
+                                    COMMA
+                                    Args (61)
+                                      Exp (61)
+                                        INT: 16
+                                  RP
+                              SEMI
+                            StmtList (62)
+                              Stmt (62)
+                                Exp (62)
+                                  Exp (62)
+                                    ID: number5
+                                  ASSIGNOP
+                                  Exp (62)
+                                    Exp (62)
+                                      ID: number5
+                                    DIV
+                                    Exp (62)
+                                      INT: 16
+                                SEMI
+                              StmtList (63)
+                                Stmt (63)
+                                  Exp (63)
+                                    Exp (63)
+                                      ID: j5
+                                    ASSIGNOP
+                                    Exp (63)
+                                      Exp (63)
+                                        ID: j5
+                                      PLUS
+                                      Exp (63)
+                                        INT: 1
+                                  SEMI
+                          RC
+                    StmtList (65)
+                      Stmt (65)
+                        Exp (65)
+                          Exp (65)
+                            ID: j5
+                          ASSIGNOP
+                          Exp (65)
+                            INT: 3
+                        SEMI
+                      StmtList (66)
+                        Stmt (66)
+                          WHILE
+                          LP
+                          Exp (66)
+                            Exp (66)
+                              ID: j5
+                            RELOP: >=
+                            Exp (66)
+                              INT: 0
+                          RP
+                          Stmt (66)
+                            CompSt (66)
+                              LC
+                              StmtList (67)
+                                Stmt (67)
+                                  Exp (67)
+                                    ID: printHexDigit
+                                    LP
+                                    Args (67)
+                                      Exp (67)
+                                        Exp (67)
+                                          ID: a5
+                                        LB
+                                        Exp (67)
+                                          ID: j5
+                                        RB
+                                    RP
+                                  SEMI
+                                StmtList (68)
+                                  Stmt (68)
+                                    Exp (68)
+                                      Exp (68)
+                                        ID: j5
+                                      ASSIGNOP
+                                      Exp (68)
+                                        Exp (68)
+                                          ID: j5
+                                        MINUS
+                                        Exp (68)
+                                          INT: 1
+                                    SEMI
+                              RC
+                        StmtList (70)
+                          Stmt (70)
+                            RETURN
+                            Exp (70)
+                              INT: 0
+                            SEMI
+                  RC
+              ExtDefList (74)
+                ExtDef (74)
+                  Sepcifier (74)
+                    TYPE: int
+                  FunDec (74)
+                    ID: main
+                    LP
+                    RP
+                  CompSt (74)
+                    LC
+                    DefList (75)
+                      Def (75)
+                        Sepcifier (75)
+                          TYPE: int
+                        DecList (75)
+                          Dec (75)
+                            VarDec (75)
+                              ID: count
+                            ASSIGNOP
+                            Exp (75)
+                              INT: 0
+                        SEMI
+                      DefList (76)
+                        Def (76)
+                          Sepcifier (76)
+                            TYPE: int
+                          DecList (76)
+                            Dec (76)
+                              VarDec (76)
+                                ID: i
+                              ASSIGNOP
+                              Exp (76)
+                                INT: 9474
+                          SEMI
+                    StmtList (77)
+                      Stmt (77)
+                        WHILE
+                        LP
+                        Exp (77)
+                          Exp (77)
+                            ID: i
+                          RELOP: <
+                          Exp (77)
+                            INT: 9475
+                        RP
+                        Stmt (78)
+                          CompSt (78)
+                            LC
+                            StmtList (79)
+                              Stmt (79)
+                                IF
+                                LP
+                                Exp (79)
+                                  Exp (79)
+                                    ID: isNarcissistic
+                                    LP
+                                    Args (79)
+                                      Exp (79)
+                                        ID: i
+                                    RP
+                                  RELOP: ==
+                                  Exp (79)
+                                    INT: 1
+                                RP
+                                Stmt (80)
+                                  CompSt (80)
+                                    LC
+                                    StmtList (81)
+                                      Stmt (81)
+                                        Exp (81)
+                                          ID: printHex
+                                          LP
+                                          Args (81)
+                                            Exp (81)
+                                              ID: i
+                                          RP
+                                        SEMI
+                                      StmtList (82)
+                                        Stmt (82)
+                                          Exp (82)
+                                            Exp (82)
+                                              ID: count
+                                            ASSIGNOP
+                                            Exp (82)
+                                              Exp (82)
+                                                ID: count
+                                              PLUS
+                                              Exp (82)
+                                                INT: 1
+                                          SEMI
+                                    RC
+                              StmtList (84)
+                                Stmt (84)
+                                  Exp (84)
+                                    Exp (84)
+                                      ID: i
+                                    ASSIGNOP
+                                    Exp (84)
+                                      Exp (84)
+                                        ID: i
+                                      PLUS
+                                      Exp (84)
+                                        INT: 1
+                                  SEMI
+                            RC
+                      StmtList (86)
+                        Stmt (86)
+                          RETURN
+                          Exp (86)
+                            ID: count
+                          SEMI
+                    RC
