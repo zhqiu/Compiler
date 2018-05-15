@@ -1,0 +1,53 @@
+FUNCTION sort :
+PARAM v1
+DEC v3 400
+v4 := #0
+v5 := #0
+LABEL label1 :
+IF v4 < v1 GOTO label2
+GOTO label3
+LABEL label2 :
+t4 := v4 * #4
+t5 := &v3 + t4
+t3 := v4 * #2
+t2 := #100 - t3
+*t5 := t2
+t7 := v4 + #1
+v4 := t7
+t6 := v4
+GOTO label1
+LABEL label3 :
+v4 := #0
+LABEL label4 :
+IF v4 < v1 GOTO label5
+GOTO label6
+LABEL label5 :
+t11 := v4 * #4
+t12 := &v3 + t11
+t10 := *t12
+WRITE t10
+t14 := v4 + #1
+v4 := t14
+t13 := v4
+GOTO label4
+LABEL label6 :
+RETURN #0
+
+FUNCTION main :
+READ t16
+v6 := t16
+t15 := v6
+IF v6 >= #100 GOTO label7
+GOTO label8
+LABEL label7 :
+t19 := #1
+t18 := #0 - t19
+WRITE t18
+GOTO label9
+LABEL label8 :
+ARG v6
+t20 := CALL sort
+LABEL label9 :
+RETURN #0
+
+

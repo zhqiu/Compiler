@@ -1,0 +1,35 @@
+FUNCTION main :
+t1 := #1
+v1 := #0 - t1
+v2 := #1
+v3 := v2
+v4 := v1 + v2
+v3 := v1
+IF v1 > #0 GOTO label5
+GOTO label4
+LABEL label5 :
+IF v2 <= #0 GOTO label1
+GOTO label4
+LABEL label4 :
+IF v3 > #0 GOTO label6
+GOTO label2
+LABEL label6 :
+IF v4 != #0 GOTO label1
+GOTO label2
+LABEL label1 :
+WRITE #1
+GOTO label3
+LABEL label2 :
+WRITE #0
+LABEL label3 :
+IF v3 > #0 GOTO label7
+GOTO label8
+LABEL label7 :
+WRITE #2
+GOTO label9
+LABEL label8 :
+WRITE #3
+LABEL label9 :
+RETURN #0
+
+

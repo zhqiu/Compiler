@@ -1,0 +1,19 @@
+FUNCTION print :
+PARAM v1
+PARAM v2
+WRITE v1
+WRITE v2
+RETURN #0
+
+FUNCTION main :
+v3 := #2
+v4 := #3
+t7 := v3
+ARG v4
+ARG t7
+t6 := CALL print
+v5 := t6
+t5 := v5
+RETURN #0
+
+
