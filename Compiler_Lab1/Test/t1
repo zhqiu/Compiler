@@ -1,0 +1,9 @@
+int main()
+{
+	int a = 10, b = 1;
+	if (a > b)
+		a = b;
+	else 
+		b = a;
+	return a;
+}
