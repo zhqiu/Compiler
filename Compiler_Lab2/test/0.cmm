@@ -1,0 +1,18 @@
+int a;
+
+int b[3][5];
+
+struct C{
+	int d;
+	float e[5];
+	struct F{
+		int g;
+	}ff;
+}h;
+
+int main(int x)
+{
+	struct C cc;
+	int i = 0;
+	return 0;
+}
